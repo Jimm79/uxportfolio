@@ -1,0 +1,691 @@
+/* ========================================================================== *\
+   1. RESET
+\* ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* Make HTML 5 elements display block-level for consistent styling */
+main, article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+/* ========================================================================== *\
+   2. GENERAL TAGS
+\* ========================================================================== */
+
+* {
+box-sizing: border-box;
+
+}
+
+.wrapper {
+    width: 1903px;
+    margin: 0 auto;
+}
+
+
+
+body {
+font-size: 25px;
+line-height: 30px;
+font-family: 'Cormorant Garamond';
+color: #5C5C5C;    
+    
+
+}
+
+.menu {
+font-family: 'Raleway';
+}
+
+p {
+padding-bottom: 20px;
+color: grey;	
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Raleway';
+	color: #585858;
+	font-weight: 800;
+    line-height: 82px;
+    padding-bottom: 20px;
+
+}
+
+h2 {
+    font-size: 60px;
+    font-family:'Raleway';
+    color: black;
+    line-height: 41px;
+    padding-bottom: 20px;
+	
+
+}
+
+h3 {
+    font-size: 40px;
+    font-family:'Raleway';
+    color: orange;
+    line-height: 38px;
+    padding-bottom: 10px;
+
+}
+
+h6 {
+    font-size: 15px;
+    font-family:'Raleway';
+    text-align: center;
+    color: black;
+    line-height: 5px;
+    padding-bottom: 0px;
+    } 
+
+
+
+/* ========================================================================== *\
+   3. STRUCTURE
+\* ========================================================================== */
+
+.header {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 0 40px;
+background-color: white;
+width: 100%;
+position: fixed;
+z-index: 9999;
+box-shadow: 0.5px 0.5px;	
+	
+}
+
+.header .logo {
+	display: block;
+	width: 375px;
+}
+
+.header .menu {
+	display: block;
+}
+
+.header .menu ul li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.header .menu ul li a {
+	display: block;
+	color: grey;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	
+}
+
+.alt_menu {
+	display: none;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: white;
+	padding-top:70px;
+	padding-right: 250px;
+}
+
+.main-img {
+	border-radius: 0%;
+}
+
+.main-img img {
+	position: relative;
+	width: 950px;
+	filter: sepia(0%);
+	transition: 1s;
+}
+
+.main-img img:hover {
+	filter:sepia(0);
+    
+}
+
+.mobile_hero {
+	display: none;
+}
+
+
+.Case_Studies {
+	text-align: center;
+	
+}
+
+.Project1 {
+	display: block;
+	margin: 100px auto;
+	width: 75%;
+	align-content: center;
+	
+	
+}
+
+.Project1 img {
+	display: block;
+	max-width: 600px;
+	float: right;
+	margin-left: 150px;
+	border-radius: 5%;
+}
+
+.Project1Text {
+	padding-top: 150px;
+	
+}
+
+
+.Project2 {
+	display: block;
+	margin: 100px auto;
+	width: 75%;
+	align-content: center;
+}
+
+.Project2 img {
+display: block;
+max-width: 600px;
+float: left;
+margin-right: 150px;
+border-radius: 5%;	
+    
+}
+
+.Project2Text {
+	padding-top: 150px;
+	
+}
+
+.Project3 {
+	display: block;
+	margin: 100px auto;
+	width: 75%;
+	align-content: center;
+	
+	
+}
+
+.Project3 img {
+	display: block;
+	max-width: 600px;
+	float: right;
+	margin-left: 150px;
+	border-radius: 5%;
+}
+
+.Project3Text {
+	padding-top: 160px;
+	
+}
+
+.Footer {
+    background-color: white;
+} 
+
+.FooterContainer {
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 20px 30px 5px;
+}
+
+.FooterNav {
+    margin: 30px 0px;
+}
+
+.FooterNav ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway';
+}
+
+.FooterNav ul li a {
+    color: dimgray;
+	margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.FooterNav ul li a:hover {
+    opacity: 0.7;
+}
+
+.CopyContainer {
+	display: block;
+}
+
+/* ========================================================================== *\
+   5. LAPTOP VERSION
+\* ========================================================================== */
+
+
+@media only screen and (max-width: 1200px) {
+	
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}		
+	
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px;
+	background-color: white;
+	padding-top:70px;
+	padding-right: 120px;
+}
+
+.main-img {
+	border-radius: 0%;
+}
+
+.main-img img {
+	position: relative;
+	width: 600px;
+	filter: sepia(0%);
+	transition: 1s;
+}
+
+.main-img img:hover {
+	filter:sepia(0);
+    
+}	
+
+body {
+font-size: 18px;
+line-height: 24px;
+font-family: 'Cormorant Garamond';
+color: #5C5C5C;    
+    
+
+}
+
+.menu {
+font-family: 'Raleway';
+}
+
+.header .logo {
+	display: block;
+	width: 250px;
+}
+
+.header .menu {
+	display: block;
+}
+
+.header .menu ul li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.header .menu ul li a {
+	display: block;
+	color: grey;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+	
+p {
+padding-bottom: 20px;
+color: grey;	
+}
+
+.Project1 {
+	display: block;
+	margin: 100px auto;
+	width: 100%;
+	align-content: center;		
+}
+
+.Project1 img {
+	display: block;
+	width: 575px;
+	float: right;
+	margin-left: 150px;
+	border-radius: 5%;
+	
+}
+
+.Project1Text {
+	display: block;
+	padding-top: none;
+	
+}	
+
+.Project2 {
+	display: block;
+	margin: 100px auto;
+	width: 100%;
+	align-content: center;
+	
+	
+}
+
+.Project2 img {
+	display: block;
+	width: 575px;
+	float: right;
+	margin-left: 150px;
+	border-radius: 5%;
+	
+}
+
+.Project2Text {
+	display: block;
+	padding-top: none;
+	
+}		
+
+.Project3 {
+	display: block;
+	margin: 100px auto;
+	width: 100%;
+	align-content: center;
+	
+	
+}
+
+.Project3 img {
+	display: block;
+	width: 575px;
+	float: right;
+	margin-left: 150px;
+	border-radius: 5%;
+	
+}
+
+.Project3Text {
+	display: block;
+	padding-top: none;
+	
+}			
+	
+h1 {
+    font-size: 55px;
+    font-family: 'Raleway';
+	color: #585858;
+	font-weight: 800;
+    line-height: 82px;
+    padding-bottom: 20px;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-family:'Raleway';
+    color: black;
+    line-height: 41px;
+    padding-bottom: 10px;
+	
+
+}
+
+h3 {
+    font-size: 40px;
+    font-family:'Raleway';
+    color: orange;
+    line-height: 38px;
+    padding-bottom: 10px;
+	text-align: center;
+
+}
+
+h6 {
+    font-size: 15px;
+    font-family:'Raleway';
+    text-align: center;
+    color: black;
+    line-height: 5px;
+    padding-bottom: 0px;
+    } 
+
+
+	
+	
+/* ========================================================================== *\
+   6. MOBILE VERSION
+\* ========================================================================== */
+
+
+@media only screen and (max-width: 700px) {
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}	
+	
+.header .logo {
+	display: block;
+	width: 400px;
+}	
+
+.header .menu {
+	display: none;
+}	
+	
+.alt_menu {
+	display: block;
+}	
+
+.header .alt_menu ul li {
+display: inline-block;
+margin-left: 40px;
+}
+
+.header .alt_menu ul li a {
+display: block;
+color: dimgrey;
+font-size: 30px;
+font-family: 'Raleway';    
+letter-spacing: 2px;
+text-decoration: none;
+}    	
+
+.hero {
+		display: none;
+	}	
+	
+.mobile_hero {
+display: block;
+justify-content: center;
+align-items: center;
+background-color: white;
+padding-bottom: 90px
+}
+	
+.main-img img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}	
+
+h1 {
+    font-size: 110px;
+    margin: 0px auto;
+	text-align: center;
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+h3 {
+	font-size: 60px;
+    font-family:'Raleway';
+    color: orange;
+    line-height: 60px;
+    padding-bottom: 30px;	
+	}	
+	
+body {
+font-size: 38px;
+line-height: 40px;
+text-align: center;
+	width: 75%;    
+    
+
+}
+
+.menu {
+font-family: 'Raleway';
+}
+
+p {
+padding-bottom: 20px;
+color: grey;	
+}	
+	
+}
+	
+.Jim-description {
+	display: block;
+	width: 75%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	
+}	
+
+.Project1 {
+	display: block;
+	margin: auto auto;
+	width: 75%;
+	align-content: center;
+}
+
+.Project1 img {
+	display: block;
+	max-width: 750px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	border-radius: 0%;
+}
+
+.Project1Text {
+	padding-top: 150px;
+	
+}
+
+.Project2 {
+	display: block;
+	margin: auto auto;
+	width: 75%;
+	align-content: center;
+}
+
+.Project2 img {
+	display: block;
+	max-width: 750px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	border-radius: 0%;
+}
+
+.Project2Text {
+	padding-top: 150px;
+	
+}
+
+.Project3 {
+	display: block;
+	margin: auto auto;
+	width: 75%;
+	align-content: center;
+	padding-bottom: 60px;
+}
+
+.Project3 img {
+	display: block;
+	max-width: 750px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	border-radius: 0%;
+}
+
+.Project3Text {
+	padding-top: 150px;
+	
+}
+
+.FooterNav ul li a {
+    margin: 30px;
+    font-size: 22px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
